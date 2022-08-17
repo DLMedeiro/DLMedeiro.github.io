@@ -6,7 +6,7 @@
   }
 
 body{
-    background: url("images/treeFilter.jpg") no-repeat fixed center/cover;
+    background: url("./images/treeFilter.jpg") no-repeat fixed center/cover;
     height: 100vh;
     position: relative;
     color:rgba(47,74,86);
