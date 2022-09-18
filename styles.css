@@ -110,6 +110,25 @@ section {
     margin-bottom: 10px;
 }
 
+.resume {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+    /* background-color: transparent; */
+    border: rgba(47,74,86) 2px solid;
+    border-radius: 5px;
+    color:  rgba(47,74,86);
+    text-decoration: none;
+}
+
+.resume:hover {
+    background-color:  rgba(47,74,86);
+    color:rgb(133, 167, 182);
+}
+
 /* PROJECTS */
 .flex-items {
     display: flex;
