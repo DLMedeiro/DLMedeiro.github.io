@@ -132,30 +132,56 @@ section {
 /* PROJECTS */
 .flex-items {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     text-align: center;
     margin: auto;
 }
-.flex-items a {
-    text-decoration:none;
-    padding:20px;
+.flex-items div>* {
+    flex: 1 1 160px;
+}
+
+.project-container{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+}
+.project-container a {
     color:rgba(47,74,86);
-}
-.flex-items a:hover {
-    text-decoration:underline;
+    background-color: transparent;
+    cursor: pointer;
+    border: rgba(47,74,86) 2px solid;
+    border-radius: 5px;
+    text-decoration:none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: all 1s;
 }
 
-.flex-items > div {
-    padding: 20px;
+.project-container a:hover {
+    background-color:  rgba(47,74,86);
+    color:rgb(133, 167, 182);
+    transition: all .5s;
 }
-.project-img {
-    /* border-radius: 50%; */
-    height: 75%;
-    width: 75%;
-    display: inline-block;
+.project-container a:hover .project-details{
+    display: inline;
+    font-size: 1rem;
+    transition: all .5s;
+}
+.project-container a:hover .project-name{
+    display: none;
+    transition: all .5s;
 }
 
+.project-container a .project-details  {
+    display: none;
+    transition: all .5s;
+}
 /* CONNECT */
 .contact-info{
     width: 100%;
