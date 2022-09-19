@@ -3,13 +3,18 @@
     margin:0;
     padding:0;
     font-family: sans-serif;
-  }
+}
 
 body{
-    background: url("./images/treeFilter.jpg") no-repeat fixed center/cover;
     height: 100vh;
     position: relative;
     color:rgba(47,74,86);
+    background-color: white;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;;
 }
 
 /* NAVBAR */
@@ -28,9 +33,10 @@ body{
     transition: 0.5s;
   }
     #navbar .logo {
-        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
         font-weight: 500;
-        color:rgb(133, 167, 182);
+        color:white;
     }
     #navbar ul {
         display:flex;
@@ -67,29 +73,24 @@ body{
     align-items:center;
     align-content:center;
     justify-content:center;
-    height:100%;
+    /* height:100%; */
+    height:100vh;
 
 }
 .showcase h1 {
-    font-size:60px;
+    font-size:7rem;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 
 /* CONTENT */
-section {
-    /* height: 50%; */
-    padding: 100px 50px 0px 50px;
-}
-
 .outer-container {
-    /* content:""; */
-    /* position:relative; */
     height: 100%;
-    background:rgba(162, 184, 194, 0.75);
-    /* top:0;
-    left:0; */
-    /* padding: 50px; */
-    /* margin: 50px; */
+    background:rgba(162, 184, 194, 0.25);
+}
+.light {
+    background:white;
 }
 .inner-container{
     /* width: 75%; */
@@ -98,7 +99,12 @@ section {
     height: 100%;
     padding: 50px;
     line-height: 1.6;
+    padding-top: 100px;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-bottom: 100px;
 }
+
 .inner-container h2 {
     margin-bottom: 30px;
     align-items: center;
@@ -110,23 +116,40 @@ section {
     margin-bottom: 10px;
 }
 
+.connect {
+    /* display: inline-block; */
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    margin: auto;
+    padding: 50px;
+    line-height: 1.6;
+    padding-top: 100px;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-bottom: 100px;
+}
+
 .resume {
     display: flex;
     text-align: center;
     justify-content: center;
     padding: 20px;
-    margin: 20px;
+    /* margin: 20px; */
     cursor: pointer;
     /* background-color: transparent; */
-    border: rgba(47,74,86) 2px solid;
+    border: transparent 2px solid;
     border-radius: 5px;
-    color:  rgba(47,74,86);
     text-decoration: none;
+    background-color:  rgba(47,74,86);
+    color:white;
 }
 
 .resume:hover {
-    background-color:  rgba(47,74,86);
-    color:rgb(133, 167, 182);
+    border: rgba(47,74,86) 2px solid;
+    border-radius: 5px;
+    color:  rgba(47,74,86);
+    background-color: transparent;
 }
 
 /* PROJECTS */
@@ -139,20 +162,124 @@ section {
     margin: auto;
 }
 .flex-items div>* {
-    flex: 1 1 160px;
+    flex: 1 1 300px;
 }
 
+.lightsOut{
+    background: url("./images/LightsOut1.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    text-decoration:none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    background-color:  rgba(47,74,86);
+    color:white;
+    border: transparent 2px solid;
+}
+.magicEight{
+    background: url("./images/MagicEightBall1.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    text-decoration:none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    background-color:  rgba(47,74,86);
+    color:white;
+    border: transparent 2px solid;
+}
+.pantry{
+    background: url("./images/CheckThePantry1.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    text-decoration:none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    background-color:  rgba(47,74,86);
+    color:white;
+    border: transparent 2px solid;
+}
+.toDo{
+    background: url("./images/ToDo1.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    text-decoration:none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    background-color:  rgba(47,74,86);
+    color:white;
+    border: transparent 2px solid;
+}
+.connectFour{
+    background: url("./images/connectFour1.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    text-decoration:none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    background-color:  rgba(47,74,86);
+    color:white;
+    border: transparent 2px solid;
+}
+.memory{
+    background: url("./images/Memory1.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    text-decoration:none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    background-color:  rgba(47,74,86);
+    color:white;
+    border: transparent 2px solid;
+}
 .project-container{
     width: 300px;
     height: 300px;
     margin: 20px;
 }
 .project-container a {
-    color:rgba(47,74,86);
-    background-color: transparent;
     cursor: pointer;
-    border: rgba(47,74,86) 2px solid;
-    border-radius: 5px;
     text-decoration:none;
     cursor: pointer;
     font-size: 1.5rem;
@@ -161,17 +288,25 @@ section {
     justify-content: center;
     height: 100%;
     transition: all 1s;
+    background-color:  rgba(47,74,86);
+    color:white;
+    border: transparent 2px solid;
+
 }
 
 .project-container a:hover {
-    background-color:  rgba(47,74,86);
-    color:rgb(133, 167, 182);
+    color:rgba(47,74,86);
+    background: none;
+    background-color: white;
+    border: rgba(47,74,86) 2px solid;
+    border-radius: 5px;
     transition: all .5s;
+
 }
 .project-container a:hover .project-details{
     display: inline;
     font-size: 1rem;
-    transition: all .5s;
+    color:rgba(47,74,86);
 }
 .project-container a:hover .project-name{
     display: none;
@@ -197,6 +332,9 @@ section {
     border: rgba(47,74,86) 2px solid;
     border-radius: 5px;
     text-decoration: none;
+    border: transparent 2px solid;
+    background-color:  rgba(47,74,86);
+    color:white;
 }
 .contact-info i{
     color:  rgba(47,74,86);
@@ -210,8 +348,11 @@ section {
     color:transparent
 }
 #email-btn:hover {
-    background-color:  rgba(47,74,86);
-    color:rgb(133, 167, 182);
+
+    color:  rgba(47,74,86);
+    background-color: transparent;
+    border: rgba(47,74,86) 2px solid;
+    border-radius: 5px;
 }
 
 /* Footer */
@@ -224,16 +365,12 @@ section {
     height: 70px;
     background:rgba(47,74,86);
     color:rgb(133, 167, 182);
-    margin-top: 100px;
 }
 
 .footer a {
     color: #fff;
 }
 
-.footer a:hover {
-    color: #28a745;
-}
 
 .footer .social > * {
     margin-right: 30px;
