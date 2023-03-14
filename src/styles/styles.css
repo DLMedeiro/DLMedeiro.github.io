@@ -371,43 +371,6 @@ h2 {
     display: none;
     transition: all .5s;
 }
-/* CONNECT */
-.contact-info{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#email-btn {
-    cursor: pointer;
-    padding: 10px 30px;
-    color:  rgba(47,74,86);
-    background-color: transparent;
-    border: rgba(47,74,86) 2px solid;
-    border-radius: 5px;
-    text-decoration: none;
-    border: transparent 2px solid;
-    background-color:  rgba(47,74,86);
-    color:white;
-}
-.contact-info i{
-    color:  rgba(47,74,86);
-    padding: 0px 10px 0px 10px;
-}
-.contact-info i:hover{
-    color:  rgba(47,74,86, .5);
-    padding: 0px 10px 0px 10px;
-}
-.contact-info a{
-    color:transparent
-}
-#email-btn:hover {
-
-    color:  rgba(47,74,86);
-    background-color: transparent;
-    border: rgba(47,74,86) 2px solid;
-    border-radius: 5px;
-}
 
 /* Footer */
 .footer {
