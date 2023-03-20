@@ -19,27 +19,52 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="bg-img">
     <!-- Navigation -->
-    <header class="hero">
-      <div id="navbar">
-        <h4 class="logo">Danielle Aranda</h4>
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#connect">Connect</a></li>
-          </ul>
-        </nav>
+    <header>
+      <div class="menu-btn">
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
       </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about.html" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="/work.html" class="nav-link">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact.html" class="nav-link">How to reach me</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Home -->
-    <div class="showcase" id="home">
-      <h1>Hi, I'm Danielle</h1>
-      <h3>I'm a Web Developer based in California</h3>
-    </div>
+    <main id="home">
+      <h1 class="lg-heading">
+        Danielle <span class="text-secondary">Aranda</span>
+      </h1>
+      <h2 class="sm-heading">Web Developer based in California</h2>
+      <div class="icons">
+        <a target="_blank" href="https://www.linkedin.com/in/daniellemedeiros/"
+          ><i class="fab fa-linkedin fa-2x"></i
+        ></a>
+        <a target="_blank" href="https://github.com/DLMedeiro">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </div>
+    </main>
 
     <!-- About Me -->
     <section id="about-me">
@@ -257,5 +282,7 @@
     <footer class="footer">
       <h5>Designed and Built by Danielle Medeiros Aranda</h5>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
