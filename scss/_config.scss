@@ -1,6 +1,6 @@
 // Colors
-$primary-color: #0D4442;
-$secondary-color: #FFBA49;
+$primary-color: #26547C;
+$secondary-color: #DCCCBB;
 
 
 
@@ -50,7 +50,7 @@ $about-image: url(../images/portrait_about.jpg); // not used here located on abo
 
 // Media and query mixins
 @mixin mediaSm {
-    @media screen  and (max-width: 500px){
+    @media screen  and (max-width: 550px){
         // any css will only apply at 500px or less
         @content;
         // use mix in other locations, content will be filled in
