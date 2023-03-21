@@ -36,3 +36,27 @@ $portrait-image: url(../images/portrait_sm.jpg);
     }
 
 }
+
+// Media and query mixins
+@mixin mediaSm {
+    @media screen  and (max-width: 500px){
+        // any css will only apply at 500px or less
+        @content;
+        // use mix in other locations, content will be filled in
+    }
+}
+@mixin mediaMd {
+    @media screen  and (max-width: 768px){
+        @content;
+    }
+}
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px){
+        @content;
+    }
+}
+@mixin mediaXl {
+    @media screen and (min-width: 1171px){
+        @content;
+    }
+}
