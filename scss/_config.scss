@@ -37,6 +37,15 @@ $portrait-image: url(../images/portrait_sm.jpg);
 
 }
 
+// Set text color
+@function set-text-color($color) {
+    @if (lightness($color) > 40){
+        @return #000;
+    } @else {
+        @return #eee;
+    }
+}
+
 // Media and query mixins
 @mixin mediaSm {
     @media screen  and (max-width: 500px){
