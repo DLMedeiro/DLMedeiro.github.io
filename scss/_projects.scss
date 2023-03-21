@@ -9,8 +9,8 @@
         border: 3px #eee solid;
 
         &:hover{
-            opacity: 0.5;
-            border-color: $secondary-color;
+            opacity: 0.7;
+            border-color: $third-color;
             @include easeOut;
         }
     }
@@ -24,15 +24,16 @@ border: 0;
 margin-bottom: 0.3rem;
 
 &:hover {
-    background: $secondary-color;
-    color: set-text-color($primary-color)
+    background: $third-color;
+    color: set-text-color($third-color)
 }
 }
 
 .btn-dark {
 @extend .btn;
-background: darken($primary-color, 50);
-color: #eee
+// background: darken($primary-color, 50);
+background: $secondary-color;
+color: set-text-color($secondary-color)
 
 }
 .btn-light{
