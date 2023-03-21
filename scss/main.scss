@@ -2,6 +2,7 @@
 @import "menu";
 
 
+
 *{
     box-sizing: border-box;
 }
@@ -52,7 +53,7 @@ header {
 
 main {
     padding: 4rem;
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - 40px);
 
     // only icons in the main section
     .icons {
@@ -78,24 +79,30 @@ main {
 }
 
 // About me section
-
 .about-info {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     display: grid;
     grid-gap: 30px;
     grid-template-areas: 
-        'bio-image bio bio'
-        'job1 job2 job3';
-    grid-template-columns: repeat(3, 1fr);
+        'bio bio-image'
+        'job1 job1'
+        'job2 job3';
+    grid-template-columns: repeat(2, 1fr);
 }
 .bio-img{
     grid-area: bio-image;
     margin: auto;
     border-radius: 50%;
     border: $secondary-color 3px solid;
+    height: 300px;
+    width: 300px;
 }
 .bio {
     grid-area: bio;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .job-1{
     grid-area: job1;
@@ -107,9 +114,18 @@ main {
     grid-area: job3;
 }
 .job {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: lighten($primary-color,5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+
+    img{
+        height: 50px;
+        width: 50px
+    }
 }
 
 // Projects
@@ -155,13 +171,54 @@ main {
     color: #333
 }
 
+// Contact
+.connect-info {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+        'connect-1'
+        'connect-2'
+        'connect-3';
+
+    grid-template-columns: 1fr;
+}
+
+.connect-1{
+    grid-area: connect-1;
+}
+.connect-2{
+    grid-area: connect-2;
+}
+.connect-3{
+    grid-area: connect-3;
+}
+.connect {
+    // text-align: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    background: lighten($primary-color,5);
+    padding: 0.5rem;
+    margin: 1rem;
+    border-bottom: $secondary-color 5px solid;
+    
+    img{
+        height: 50px;
+        width: 50px
+    }
+}
+
 // Footer
 #main-footer{
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
     background: darken($primary-color, 10);
     color: set-text-color($primary-color);
-    height: 60px;
+    height: 40px; //update main min height
 }
 
 

@@ -45,7 +45,7 @@
     top: 0;
     width: 100%;
     visibility: hidden; //not showing by default
-    opacity: 0.9;
+    // opacity: 0.9;
     &.show {
         visibility: visible;
     }
@@ -64,7 +64,7 @@
     &-nav{
         margin: 0;
         padding: 0;
-        background: darken($primary-color, 5) ;
+        background: rgba(darken($primary-color, 5), 0.9) ;
       
         list-style: none;
         transform: translate3d(0, -100%, 0);
@@ -80,7 +80,7 @@
     &-branding{
         margin: 0;
         padding: 0;
-        background: $primary-color ;
+        background: rgba($primary-color, 0.9) ;
         transform: translate3d(0, 100%, 0);
         // 100 brings in from the bottom
         @include easeOut;
@@ -93,7 +93,7 @@
         .portrait {
             width: 250px;
             height: 250px;
-            background: $portrait-image;
+            background: $menu-image;
             border-radius: 50%;
             border: solid 3px $secondary-color ;
             background-size: cover;

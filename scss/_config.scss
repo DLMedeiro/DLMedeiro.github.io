@@ -1,6 +1,7 @@
 // Colors
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-color: #0D4442;
+$secondary-color: #FFBA49;
+
 
 
 $show-home-image: true;
@@ -9,7 +10,8 @@ $background-opacity: 0.9;
 // Images
 // Remove "dist" location -> Compiled css file needs the link in relation to it's location not the sass file
 $home-image: url(../images/tree.jpeg);
-$portrait-image: url(../images/portrait_sm.jpg);
+$menu-image: url(../images/portrait_menu.jpg);
+$about-image: url(../images/portrait_about.jpg); // not used here located on about.html
 
 @mixin easeOut{
     transition: all 0.5s ease-out
