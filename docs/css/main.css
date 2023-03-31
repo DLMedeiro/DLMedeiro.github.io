@@ -191,7 +191,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh - 40px); }
+  min-height: 100vh; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -382,15 +382,14 @@ main {
     align-items: center;
     width: 100%; }
   .project_demo {
-    margin: 1rem; }
+    margin: .5rem; }
     .project_demo img {
-      height: 300px;
-      width: 300px; }
+      height: 250px;
+      width: 250px; }
   .project_text {
     background: #00948a;
-    padding: 1rem;
-    margin: 1rem;
-    border-bottom: #FFC43D 5px solid; }
+    border-bottom: #FFC43D 5px solid;
+    width: 90%; }
     .project_text img {
       height: 50px;
       width: 50px; } }

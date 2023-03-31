@@ -54,7 +54,8 @@ header {
 
 main {
     padding: 4rem;
-    min-height: calc(100vh - 40px);
+    min-height: 100vh;
+    // min-height: calc(100vh - 40px);
 
     // only icons in the main section
     .icons {
