@@ -1,3 +1,17 @@
+h4 {
+  margin-bottom: 0;
+  padding-top: 10px;
+  border-top: 1px solid #FFC43D;
+}
+h5 {
+  margin: 5px;
+}
+
+#work p {
+  margin-top: 0;
+  margin-left: 5px;
+}
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -211,7 +225,9 @@ main {
   align-items: center;
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bio bio-image' 'job1 job1' 'job2 job3';
+  grid-template-areas: 'bio bio-image'
+ 'job1 job1'
+ 'job2 job3';
   grid-template-columns: repeat(2, 1fr); }
 
 .bio-img {
@@ -255,7 +271,9 @@ main {
   align-items: center;
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'connect-1' 'connect-2' 'connect-3';
+  grid-template-areas: 'connect-1'
+ 'connect-2'
+ 'connect-3';
   grid-template-columns: 1fr; }
 
 .connect-1 {
@@ -336,7 +354,11 @@ main {
   main#work {
     padding: 1rem; }
   .about-info {
-    grid-template-areas: 'bio-image' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bio-image'
+ 'bio'
+ 'job1'
+ 'job2'
+ 'job3';
     grid-template-columns: 1fr; }
   .item {
     text-align: left;
