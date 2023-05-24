@@ -3,6 +3,9 @@ h4 {
   padding-top: 10px;
   border-top: 1px solid #FFC43D;
 }
+h4 a:hover {
+  color: #FFC43D
+}
 h5 {
   margin: 5px;
 }
